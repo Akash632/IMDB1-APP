@@ -8,7 +8,6 @@ import Popular from './components/Popular/Popular';
 import TopRated from './components/TopRated/TopRated';
 import Carousal from './components/Home/Carousal';
 import Home from './components/Home/Home';
-import Data from './components/Home/Data';
 
 function App() {
   return (
@@ -16,7 +15,7 @@ function App() {
       <BrowserRouter>
       <Navbar/>
       <Routes>
-        {/* <Route exact path="/home" element={<Data/>}/> */}
+        <Route exact path="/home" element={<Home/>}/>
         <Route exact path="/NowPlaying" element={<Cards/>}/>
         <Route exact path="/Popular" element={<Popular/>}/>
         <Route exact path="/TopRated" element={<TopRated/>}/>

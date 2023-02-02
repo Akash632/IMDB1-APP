@@ -1,11 +1,12 @@
 .card_page{
-    padding: 60px;
+    padding: 20px;
 }
 .cards_main{
     display: grid;
     grid-template-columns: repeat(6,1fr);
-    /* padding: 50px; */
+    padding: 50px;
     gap: 5px;
+    margin-top: -70px;
 }
 .card_description{
     color: white;
@@ -37,6 +38,7 @@
 .page_title{
     color: white;
     margin-left: 2px;
+    cursor: pointer;
 }
 .card_container:hover{
    box-shadow: 2px 2px 7px 7px rgb(205, 205, 205);
@@ -44,9 +46,39 @@
 .card_button:hover{
     color: rgb(155, 155, 35);
 }
-
-@media screen and (max-width: 1024px){
-    .cards_main{
-        grid-template-columns: repeat(4,1fr);
-    }
+.section_section{
+    display: flex;
+    justify-content: space-between;
+    /* border-style: solid;
+    border-color: aliceblue; */
+}
+.select_bar{
+    color: white;
+    background-color: black;
+}
+.latest_section{
+    color: white;
+}
+.latest-section_image{
+    margin-top: 50px;
+}
+.section_section>h1{
+    margin-left: 75px;
+}
+.section_toggle{
+    margin-top: 30px;
+    margin-right: 75px;
+}
+.page_title>span{
+    color:#f3ce13;
+}
+.section_toggle>select{
+    border-color: black;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 3px;
+    margin-left: 5px;
+}
+.section_toggle>select:hover{
+    background-color: rgb(60, 60, 60);
 }

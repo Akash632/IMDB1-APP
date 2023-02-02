@@ -1,5 +1,5 @@
 import React, { useState, useEffect,useContext} from "react";
-import "./TopRated.css";
+import '../CardList.css';
 import CardClass from "../CardClass";
 import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
 function TopRated() {

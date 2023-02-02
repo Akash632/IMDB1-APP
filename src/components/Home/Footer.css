@@ -1,0 +1,13 @@
+.Footer_main{
+    border-style: solid;
+    color: white;
+    margin: 70px 70px 0px 70px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-top-width: 1px;
+    border-color: rgb(117, 116, 116);
+}
+.Footer_main>h1{
+    color: white;
+}

@@ -2,12 +2,14 @@ import React, { useState, useEffect } from "react";
 import "./MovieDetails.css";
 import { useParams } from "react-router-dom";
 import StarIcon from "@mui/icons-material/Star";
+import Videos from "./Videos";
 
 export default function MovieDetails() {
   const params = useParams();
 
   const [data, setData] = useState({});
   const [genres, setGenres] = useState([]);
+  const[production,setProduction] = useState([]);
 
   async function DetailsApi() {
     let url = `https://api.themoviedb.org/3/movie/${params.id}?api_key=9b48421e56beff9d0381692f8b0ee7d7&language=en-US`;
@@ -15,6 +17,7 @@ export default function MovieDetails() {
     let data = await response.json();
     setData(data);
     setGenres(data.genres);
+    setProduction(data.production_companies)
   }
 
   useEffect(() => {
@@ -33,8 +36,10 @@ export default function MovieDetails() {
     vote_count,
     runtime,
   } = data;
-  // let {belongs_to_collection:{id,name,poster_path},}=data;
+  
+
   return (
+    <div>
     <div className="movie">
       <div className="movie_intro">
         <img
@@ -84,8 +89,30 @@ export default function MovieDetails() {
           </div>
         </div>
       </div>
-      <hr/>
+    </div>
+    <div className="video_container">
+      <Videos id={params.id}/>
+    </div>
+    <div className="production">
+      <div className="production_heading">
       <h1>Production</h1>
+      </div>
+        <div className="production_section">
+          {production.map((prodvalue)=>(
+            <div className="production_container">
+              <div className="production_item_section">
+              <div className="prod_image_container">
+              <img src={`https://image.tmdb.org/t/p/original${prodvalue.logo_path}`}/>
+                </div>
+                <div className="production_text">
+                <p className="production_name">{prodvalue.name}</p>
+              <p className="production_country">{prodvalue.origin_country}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }

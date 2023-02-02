@@ -1,16 +1,14 @@
 .nav{
     display: flex;
     justify-content: space-between;
-    padding: 5px 7%;
+    padding: 7px 10%;
     /* margin-bottom: 5px; */
-}
-hr{
-    width: 100%;
+    background-color: #121212;
 }
 .logo_image{
-    height: 35px;
+    height: 34px;
     /* margin-top: 10px; */
-    margin-right: 20px;
+    margin-right: 5px;
     cursor: pointer;
 }
 .nav_right{
@@ -23,11 +21,21 @@ hr{
     font-weight: 500;
     cursor: pointer;
 }
-.nav_left>input{
+.search_container{
+    /* border-style: solid;
+    border-color: white; */
+    width: 100%;
+    display: flex;
     background-color: white;
-    height: 32px;
     border-radius: 5px;
-    width: 500px;
+}
+.search_container>input{
+    background-color: white;
+    height: 31px;
+    border-radius: 5px;
+    width: 450px;
+    border-style: none;
+    padding-left: 10px;
 }
 .nav_left{
     display: flex;
@@ -39,5 +47,40 @@ hr{
 @media screen and (max-width: 1024px) {
     .nav{
         display: block;
+        padding: 5px 5%;
     }
+    /* .search_container>input{
+        width: 300px;
+    } */
+    .search_container{
+        width:300px;
+    }
+    .nav_right{
+        display: none;
+    }
+}
+.menu_container{
+    margin-right: 5px;
+    height: 37px;
+    background-color: black;
+    border-radius: 5px;
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* padding: 10px; */
+    display: flex;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+}
+.menu_text_container{
+    margin-top: -8px;
+    margin-left: 10px; 
+    /* border-style: solid; */
+}
+.movie_text{
+    font-weight: bold;
+}
+.menu_container:hover{
+    background-color: rgb(60, 60, 60);
 }

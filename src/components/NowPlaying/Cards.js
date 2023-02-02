@@ -1,6 +1,7 @@
 import React, { useState, useEffect} from "react";
 import CardClass from "../CardClass";
-import "./Cards.css";
+// import "./Cards.css";
+import '../CardList.css';
 import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
 function Cards() {
   const [value, setValue] = useState([]);
