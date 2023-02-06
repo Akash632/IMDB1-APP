@@ -17,22 +17,25 @@ function Videos(props) {
     getVideo();
   }, []);
   return (
-    <div className="video_section">
-      {video.slice(0,3).map((videodata) => (
+    <div className="video_main_section">
+      <h1>Trailer</h1>
+      <div className="video_section">
+      {video.slice(0,2).map((videodata) => (
         <div className="video_card_container">
           <iframe
             width="510"
             height="280"
             src={`https://www.youtube.com/embed/${videodata.key}?modestbranding=1&;showinfo=0&;autohide=1&;rel=0;`}
             title="YouTube video player"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; gyroscope; web-share"
-            allowfullscreen
+            allowFullScreen
             style={{borderRadius:10}}
           ></iframe>
           {/* <p>{videodata.name}</p> */}
         </div>
       ))}
+    </div>
     </div>
   );
 }

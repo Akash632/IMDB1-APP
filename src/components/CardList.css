@@ -37,7 +37,8 @@
 }
 .page_title{
     color: white;
-    margin-left: 2px;
+    margin-left: 50px;
+    margin-bottom: 40px;
     cursor: pointer;
 }
 .card_container:hover{
@@ -81,4 +82,7 @@
 }
 .section_toggle>select:hover{
     background-color: rgb(60, 60, 60);
+}
+.cards_recommendations{
+    margin-left: 80px;
 }

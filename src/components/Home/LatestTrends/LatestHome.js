@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from 'react';
-import LatestCard from './LatestCard';
+import CardClass from '../../CardClass';
 import '../../CardList.css';
 import { Navigate,useNavigate } from "react-router-dom";
 import Error from '../../Error';
@@ -33,6 +33,7 @@ export default function LatestHome() {
             <option>week</option>
         </select>
         <select className="select_bar" onChange={(e)=>setCategory(e.target.value)}>
+          <option>all</option>
             <option>movie</option>
             <option>tv</option>
         </select>
@@ -41,9 +42,9 @@ export default function LatestHome() {
       <div className="card_page">
       <div className="cards_main">
         {data.slice(0,6).map((movie) => (
-          <LatestCard
-          movieId={movie.id}
-          movieImage={movie.poster_path}
+          <CardClass
+          id={movie.id}
+          moviepath={movie.poster_path}
           moviename={movie.original_title}
           moviedescription={movie.overview}
         />

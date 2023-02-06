@@ -1,17 +1,25 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { UserContext, UserProvider } from "./Context";
 import "./Navbar.css";
-import { Navigate, useNavigate, Link } from "react-router-dom";
+import { Navigate, useNavigate, Link, useLocation } from "react-router-dom";
 import Popular from "./Popular/Popular";
 import DehazeIcon from "@mui/icons-material/Dehaze";
-import SearchIcon from '@mui/icons-material/Search';
+import SearchIcon from "@mui/icons-material/Search";
 
 function Navbar() {
   const { movieId, setMovieId } = useContext(UserContext);
   const { type, setType } = useContext(UserContext);
 
   const navigate = useNavigate();
- return (
+
+  const location = useLocation();
+  useEffect(() => {
+    console.log(location.pathname);
+    if(location.pathname=="/"){
+      navigate("/home");
+    }
+  }, []);
+  return (
     <div>
       <div className="nav">
         <div className="nav_left">
@@ -24,15 +32,17 @@ function Navbar() {
           />
           <div className="menu_container">
             <div>
-            <DehazeIcon style={{marginTop:5}}/>
+              <DehazeIcon style={{ marginTop: 5 }} />
             </div>
             <div className="menu_text_container">
-            <p className="menu_text" style={{fontWeight:"bold"}}>Menu</p>
+              <p className="menu_text" style={{ fontWeight: "bold" }}>
+                Menu
+              </p>
             </div>
           </div>
           <div className="search_container">
-          <input type="text" placeholder="Search" />
-          <SearchIcon style={{color:"grey",fontSize:30,marginTop:2}}/>
+            <input type="text" placeholder="Search" />
+            <SearchIcon style={{ color: "grey", fontSize: 30, marginTop: 2 }} />
           </div>
         </div>
         <div className="nav_right">
@@ -40,19 +50,19 @@ function Navbar() {
             to="/NowPlaying"
             style={{ textDecoration: "none", color: "white", marginLeft: 30 }}
           >
-            <p className="nav_item">Now Playing</p>
+            <p className="nav_item" onClick={()=>setMovieId("NowPlaying")}>Now Playing</p>
           </Link>
           <Link
             to="/Popular"
             style={{ textDecoration: "none", color: "white", marginLeft: 30 }}
           >
-            <p onClick={setMovieId("Popular")}>Popular</p>
+            <p onClick={()=>setMovieId("Popular")}>Popular</p>
           </Link>
           <Link
             to="/TopRated"
             style={{ textDecoration: "none", color: "white", marginLeft: 30 }}
           >
-            <p onClick={setMovieId("TopRated")}>Top Rated</p>
+            <p onClick={()=>setMovieId("TopRated")}>Top Rated</p>
           </Link>
         </div>
       </div>

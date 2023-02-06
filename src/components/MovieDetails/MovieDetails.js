@@ -3,9 +3,12 @@ import "./MovieDetails.css";
 import { useParams } from "react-router-dom";
 import StarIcon from "@mui/icons-material/Star";
 import Videos from "./Videos";
+import Recommendations from "./Recommendations";
+
 
 export default function MovieDetails() {
   const params = useParams();
+  console.log(params.id);
 
   const [data, setData] = useState({});
   const [genres, setGenres] = useState([]);
@@ -92,6 +95,9 @@ export default function MovieDetails() {
     </div>
     <div className="video_container">
       <Videos id={params.id}/>
+    </div>
+    <div>
+      <Recommendations id={params.id}/>
     </div>
     <div className="production">
       <div className="production_heading">

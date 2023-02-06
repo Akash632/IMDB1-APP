@@ -25,12 +25,31 @@ h3{
 .carousal_text_section{
     position: absolute;
     left: 30px;
-    top:58vh;
+    top:48vh;
     margin-left: 20px;
     /* background-color: black;
     opacity: 0.5; */
+    cursor: pointer;
 }
+/* .slider.slick-prev{
+    z-index: 10;
+} */
+.play_button_section{
+    display: flex;
+    /* padding: 3px; */
+    border-radius: 60px;
+    /* margin-right: 1rem; */
+    width: 100px;
+    padding: 2px;
 
+}
+.play_button_section:hover{
+    border-color: #f3ce13;
+    box-shadow: 1px 1px 7px 7px #f3ce13;
+}
+.play_button{
+    margin-top: 12px;
+}
 @media screen and (max-width: 1024px){
     .carousal_Image{
         height: 400px;

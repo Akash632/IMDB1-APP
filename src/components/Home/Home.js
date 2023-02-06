@@ -1,7 +1,7 @@
 import React from 'react';
 // import News from './News';
 import Carousal from './Carousal';
-import Footer from './Footer';
+// import Footer from './Footer';
 import LatestHome from './LatestTrends/LatestHome';
 // import TopScroll from './TopScroll';
 
@@ -12,7 +12,7 @@ function Home() {
       {/* <TopScroll/> */}
       <LatestHome/>
       {/* <News/> */}
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   );
 }

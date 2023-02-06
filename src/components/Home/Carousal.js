@@ -35,7 +35,7 @@ function Carousal(props) {
   return (
     <div>
       <div className="carousal">
-      <Slider {...settings}>
+      <Slider {...settings} className="slider">
         {value.slice(0,10).map((carousaldata)=>(
              <CarousalCard
           key={carousaldata}

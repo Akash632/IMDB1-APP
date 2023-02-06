@@ -37,6 +37,9 @@
     border-style: none;
     padding-left: 10px;
 }
+.search_container>input:focus{
+    outline: none;
+}
 .nav_left{
     display: flex;
     align-items: center;
