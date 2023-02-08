@@ -9,6 +9,7 @@ import TopRated from './components/TopRated/TopRated';
 import Carousal from './components/Home/Carousal';
 import Home from './components/Home/Home';
 import Footer from './components/Footer/Footer';
+import Git from './components/Git';
 
 function App() {
   // const location = useLocation();
@@ -27,6 +28,7 @@ function App() {
         <Route exact path="/:type/:id" element={<MovieDetails/>}/>
       </Routes>
       <Footer/>
+      <Git/>
       </BrowserRouter>
     </div>
   );
