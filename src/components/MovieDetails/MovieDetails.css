@@ -193,6 +193,9 @@
 .video_container{
     color: white;
 }
+.reviews>h1{
+    color: white;
+}
 /* .movie__links {
     position: relative;
     bottom: 120px;

@@ -11,7 +11,7 @@ function Videos(props) {
     setVideo(data.results);
     // console.log(data);
     // console.log(video);
-    video.map((videodata) => console.log(videodata.name));
+    // video.map((videodata) => console.log(videodata.name));
   }
   useEffect(() => {
     getVideo();

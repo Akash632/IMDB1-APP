@@ -4,11 +4,12 @@ import { useParams } from "react-router-dom";
 import StarIcon from "@mui/icons-material/Star";
 import Videos from "./Videos";
 import Recommendations from "./Recommendations";
+import Reviews from "./Reviews";
 
 
 export default function MovieDetails() {
   const params = useParams();
-  console.log(params.id);
+  // console.log(params.id);
 
   const [data, setData] = useState({});
   const [genres, setGenres] = useState([]);
@@ -118,6 +119,9 @@ export default function MovieDetails() {
             </div>
           ))}
         </div>
+      </div>
+      <div className="reviews">
+        <Reviews id={params.id}/>
       </div>
     </div>
   );

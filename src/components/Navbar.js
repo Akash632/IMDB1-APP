@@ -14,7 +14,7 @@ function Navbar() {
 
   const location = useLocation();
   useEffect(() => {
-    console.log(location.pathname);
+    // console.log(location.pathname);
     if(location.pathname=="/"){
       navigate("/home");
     }

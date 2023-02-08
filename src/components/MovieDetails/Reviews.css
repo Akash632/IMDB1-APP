@@ -1,0 +1,9 @@
+.reviews{
+    border-style: solid;
+    border-color: white;
+    color: white;
+}
+.reviews>h1{
+    color: white;
+    margin-left: 150px;
+}

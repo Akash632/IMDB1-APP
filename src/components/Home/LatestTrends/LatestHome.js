@@ -11,14 +11,14 @@ export default function LatestHome() {
     const[category,setCategory]=useState("movie");
     const[data,setData]=useState([]);
     const [page, setPage] = useState(1);
-    console.log(time);
-    console.log(category);
+    // console.log(time);
+    // console.log(category);
 
     async function apiCall(){
         let response = await fetch(`https://api.themoviedb.org/3/trending/${category}/${time}?api_key=9b48421e56beff9d0381692f8b0ee7d7`);
         let data = await response.json();
         setData(data.results);
-        console.log(data);
+        // console.log(data);
     }
     useEffect(()=>{
         apiCall();

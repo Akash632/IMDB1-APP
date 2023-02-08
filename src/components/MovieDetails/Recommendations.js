@@ -9,7 +9,7 @@ function Recommendations(props) {
         const response = await fetch(`https://api.themoviedb.org/3/movie/${props.id}/recommendations?api_key=9b48421e56beff9d0381692f8b0ee7d7&language=en-US&page=1`)
         const data = await response.json();
         setData(data.results);
-        console.log(data);
+        // console.log(data);
     }
     useEffect(()=>{
         apicall();
