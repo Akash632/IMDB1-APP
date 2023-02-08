@@ -10,6 +10,7 @@ import Carousal from './components/Home/Carousal';
 import Home from './components/Home/Home';
 import Footer from './components/Footer/Footer';
 import Git from './components/Git';
+import GitDemo from './GitDemo';
 
 function App() {
   // const location = useLocation();
@@ -29,6 +30,7 @@ function App() {
       </Routes>
       <Footer/>
       <Git/>
+      <GitDemo/>
       </BrowserRouter>
     </div>
   );
