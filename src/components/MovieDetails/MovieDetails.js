@@ -102,7 +102,7 @@ export default function MovieDetails() {
     </div>
     <div className="production">
       <div className="production_heading">
-      <h1>Production</h1>
+      <h1 className="page_heading">Production</h1>
       </div>
         <div className="production_section">
           {production.map((prodvalue)=>(

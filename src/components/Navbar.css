@@ -21,6 +21,12 @@
     font-weight: 500;
     cursor: pointer;
 }
+.activeClassName{
+    color: #f3ce13;
+}
+.nav_item{
+    font-weight: 600;
+}
 .search_container{
     /* border-style: solid;
     border-color: white; */
@@ -86,4 +92,7 @@
 }
 .menu_container:hover{
     background-color: rgb(60, 60, 60);
+}
+.nav_item:hover{
+    color:#f3ce13;
 }

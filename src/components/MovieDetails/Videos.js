@@ -18,9 +18,9 @@ function Videos(props) {
   }, []);
   return (
     <div className="video_main_section">
-      <h1>Trailer</h1>
+      <h1 className="video-heading">Trailer</h1>
       <div className="video_section">
-      {video.slice(0,2).map((videodata) => (
+      {video?video.slice(0,2).map((videodata) => (
         <div className="video_card_container">
           <iframe
             width="510"
@@ -34,7 +34,7 @@ function Videos(props) {
           ></iframe>
           {/* <p>{videodata.name}</p> */}
         </div>
-      ))}
+      )):""}
     </div>
     </div>
   );

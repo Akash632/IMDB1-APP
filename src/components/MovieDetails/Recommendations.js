@@ -19,14 +19,14 @@ function Recommendations(props) {
     <div className="card_page cards_recommendations">
       <h1 className="page_title">Recommendations</h1>
       <div className="cards_main">
-        {data.slice(0,5).map((movie) => (
+        {data?data.slice(0,5).map((movie) => (
           <CardClass
           id={movie.id}
           moviepath={movie.poster_path}
           moviename={movie.original_title}
           moviedescription={movie.overview}
         />
-        ))}
+        )):""}
       </div>
     </div>
   );

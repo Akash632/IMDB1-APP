@@ -1,6 +1,6 @@
 import React from 'react';
 
-function GitDemo() {
+function SearchDetails() {
   return (
     <div>
       <h1>Hello</h1>
@@ -8,4 +8,4 @@ function GitDemo() {
   );
 }
 
-export default GitDemo;
+export default SearchDetails;

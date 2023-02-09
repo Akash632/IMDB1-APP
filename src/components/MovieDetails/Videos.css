@@ -9,6 +9,7 @@
     /* border-style: solid;
     border-color: white; */
     display: flex;
+    margin-left: -20px;
     /* overflow-x: scroll; */
 }
 .video_card_container{
@@ -23,6 +24,13 @@
 .video_main_section{
     margin-top: -210px;
     margin-left: 50px;
+}
+.video-heading{
+    color: white;
+    border-style: solid;
+    border-color: #f3ce13;
+    border-width: 0px 0px 0px 5px;
+    padding-left: 10px;
 }
 /* .video_main_section>h1{
     margin-left: 50px;

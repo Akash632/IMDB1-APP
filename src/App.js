@@ -9,8 +9,8 @@ import TopRated from './components/TopRated/TopRated';
 import Carousal from './components/Home/Carousal';
 import Home from './components/Home/Home';
 import Footer from './components/Footer/Footer';
-import Git from './components/Git';
-import GitDemo from './GitDemo';
+import Search from './components/Search.js'
+import SearchDetails from './components/SearchDetails';
 
 function App() {
   // const location = useLocation();
@@ -27,10 +27,10 @@ function App() {
         <Route exact path="/Popular" element={<Popular/>}/>
         <Route exact path="/TopRated" element={<TopRated/>}/>
         <Route exact path="/:type/:id" element={<MovieDetails/>}/>
+        <Route exact path="/Search" element={<Search/>}/>
+        {/* <Route exact path="/Search/:id" element={<SearchDetails/>}/> */}
       </Routes>
       <Footer/>
-      <Git/>
-      <GitDemo/>
       </BrowserRouter>
     </div>
   );

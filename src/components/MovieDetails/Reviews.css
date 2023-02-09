@@ -1,9 +1,41 @@
-.reviews{
-    border-style: solid;
-    border-color: white;
-    color: white;
-}
-.reviews>h1{
+.review{
     color: white;
     margin-left: 150px;
+    display: flex;
+    margin-right: 150px;
+    border-style: solid;
+    border-color: rgb(117, 116, 116);
+    border-width: 1px;
+    border-radius: 5px;
+    font-style: italic;
+    font-size: 15px;
+}
+.review-body{
+    margin-top: 50px;
+}
+.review-body>h1{
+    color: white;
+    margin-left: 150px;
+    border-style: solid;
+    border-color: #f3ce13;
+    border-width: 0px 0px 0px 5px;
+    padding-left: 10px;
+}
+.review-container{
+    padding: 10px;
+}
+.user-section{
+    display: flex;
+}
+.user-section>p{
+    margin-right: 15px;
+}
+.rating-section{
+    display: flex;
+}
+.read-more{
+    color: #f3ce13;
+    text-decoration: none;
+    font-style: italic;
+    margin-left: 5px;
 }
