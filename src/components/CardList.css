@@ -20,6 +20,7 @@
     border-width: 1px;
     padding: 5px;
     border-radius: 5px;
+    height: 100%;
 }
 .card_description>p{
     font-size: 12px;
@@ -104,3 +105,16 @@
 /* .page_title>span{
     color: #f3ce13;
 } */
+.tv_section{
+    margin-top: -60px;
+}
+.page_title_tv{
+    color: white;
+    margin-left: 70px;
+    margin-bottom: 40px;
+    cursor: pointer;
+    border-style: solid;
+    border-color: #f3ce13;
+    border-width: 0px 0px 0px 5px;
+    padding-left: 10px;
+}

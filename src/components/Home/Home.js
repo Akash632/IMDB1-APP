@@ -1,4 +1,5 @@
 import React from 'react';
+import TVcard from '../TV/TVcard';
 // import News from './News';
 import Carousal from './Carousal';
 // import Footer from './Footer';
@@ -13,6 +14,7 @@ function Home() {
       <LatestHome/>
       {/* <News/> */}
       {/* <Footer/> */}
+      <TVcard/>
     </div>
   );
 }

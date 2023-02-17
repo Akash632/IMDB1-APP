@@ -87,6 +87,12 @@ function Navbar() {
           >
             <p className="nav_item" onClick={() => setMovieId("TopRated")}>Top Rated</p>
           </Link>
+          <Link activeClassName="active"
+            to="/TVPage"
+            style={{ textDecoration: "none", color: "white", marginLeft: 30 }}
+          >
+            <p className="nav_item" onClick={() => setMovieId("TvPage")}>TV</p>
+          </Link>
         </div>
       </div>
     </div>

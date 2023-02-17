@@ -12,9 +12,9 @@ function Search(props) {
       `https://api.themoviedb.org/3/search/movie?api_key=9b48421e56beff9d0381692f8b0ee7d7&language=en-US&query=${searchBar}&page=1&include_adult=false`
     );
     const data = await response.json();
-    console.log(data.results);
+    // console.log(data.results);
     setSearchResult(data.results);
-    console.log(data.results);
+    // console.log(data.results);
   }
   useEffect(() => {
     searchApi();

@@ -40,7 +40,7 @@ export default function MovieDetails() {
     vote_count,
     runtime,
   } = data;
-  
+  console.log(backdrop_path);
 
   return (
     <div>

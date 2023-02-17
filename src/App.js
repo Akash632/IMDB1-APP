@@ -11,6 +11,8 @@ import Home from './components/Home/Home';
 import Footer from './components/Footer/Footer';
 import Search from './components/Search.js'
 import SearchDetails from './components/SearchDetails';
+import TVPage from './components/TVPage/TVPage';
+import TVDetails from './components/TV/TVDetails';
 
 function App() {
   // const location = useLocation();
@@ -28,6 +30,8 @@ function App() {
         <Route exact path="/TopRated" element={<TopRated/>}/>
         <Route exact path="/:type/:id" element={<MovieDetails/>}/>
         <Route exact path="/Search" element={<Search/>}/>
+        <Route exact path="/TVPage" element={<TVPage/>}/>
+        <Route exact path="/TVPage/:id" element={<TVDetails/>}/>
         {/* <Route exact path="/Search/:id" element={<SearchDetails/>}/> */}
       </Routes>
       <Footer/>
