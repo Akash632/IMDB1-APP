@@ -32,6 +32,7 @@ function Search(props) {
       )):<div className="search-image">
       <div>
         <img src="https://icon-library.com/images/negative-search-cinema-movies-photography-512.png"/>
+        <h1>No results found</h1>
         </div>
         </div>
         }

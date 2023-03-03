@@ -5,11 +5,13 @@ import StarIcon from "@mui/icons-material/Star";
 import Videos from "./Videos";
 import Recommendations from "./Recommendations";
 import Reviews from "./Reviews";
+import Cast from "./Cast";
 
 
 export default function MovieDetails() {
   const params = useParams();
   // console.log(params.id);
+  // console.log(params);
 
   const [data, setData] = useState({});
   const [genres, setGenres] = useState([]);
@@ -26,7 +28,8 @@ export default function MovieDetails() {
 
   useEffect(() => {
     DetailsApi();
-  }, []);
+    window.scrollTo(0, 0);
+  }, [params.id]);
 
   const {
     backdrop_path,
@@ -40,14 +43,14 @@ export default function MovieDetails() {
     vote_count,
     runtime,
   } = data;
-  console.log(backdrop_path);
+  // console.log(backdrop_path);
 
   return (
     <div>
     <div className="movie">
       <div className="movie_intro">
         <img
-          className="movie_backdrop"
+          className="movie_backdrop backgrop_image"
           src={`https://image.tmdb.org/t/p/original${backdrop_path}`}
         />
       </div>
@@ -94,6 +97,9 @@ export default function MovieDetails() {
         </div>
       </div>
     </div>
+    <div>
+      <Cast id={params.id}/>
+    </div>
     <div className="video_container">
       <Videos id={params.id}/>
     </div>
@@ -109,7 +115,7 @@ export default function MovieDetails() {
             <div className="production_container">
               <div className="production_item_section">
               <div className="prod_image_container">
-              <img src={`https://image.tmdb.org/t/p/original${prodvalue.logo_path}`}/>
+              <img src={`https://www.themoviedb.org/t/p/w220_and_h330_face/${prodvalue.logo_path}`}/>
                 </div>
                 <div className="production_text">
                 <p className="production_name">{prodvalue.name}</p>

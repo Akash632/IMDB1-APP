@@ -96,3 +96,6 @@
 .nav_item:hover{
     color:#f3ce13;
 }
+.active{
+    color: #f3ce13;
+}

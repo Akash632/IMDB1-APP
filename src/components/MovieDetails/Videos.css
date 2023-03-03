@@ -1,6 +1,6 @@
 .video_container{
     color: white;
-    /* margin-top: -150px; */
+    margin-top: 250px;
     margin-left: 110px;
     /* padding: 30px; */
 }
@@ -22,7 +22,7 @@
     box-shadow: 2px 2px 7px 7px rgb(205, 205, 205);
 }
 .video_main_section{
-    margin-top: -210px;
+    margin-top: -230px;
     margin-left: 50px;
 }
 .video-heading{

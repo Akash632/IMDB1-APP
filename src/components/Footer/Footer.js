@@ -6,7 +6,7 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import CopyrightIcon from "@mui/icons-material/Copyright";
-
+import {Link} from "react-router-dom";
 function Footer() {
   return (
     <div className="Footer_main">
@@ -51,11 +51,11 @@ function Footer() {
         </a>
       </div>
       <div className="footer_main">
-              <a href="././home">Home</a>
-              <a href="././NowPlaying">Now Playing</a>
-              <a href="././Popular">Popular</a>
-              <a href="https://apps.apple.com/us/app/id342792525?_branch_match_id=1147915344480287457&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXL86pTNJLLCjQy8nMy9YP9k6pDDRzNDGxBABVqlN1IAAAAA%3D%3D&utm_campaign=mdot%20sitewide%20footer%20Branch%20update&utm_medium=marketing&utm_source=IMDb%20Mdot"
-              target="_blank">Downloab App</a>
+
+              <Link to="/home"><a>Home</a></Link>
+              <Link to="/NowPlaying"><a>Now Playing</a></Link>
+              <Link to="/Popular"><a>Popular</a></Link>
+              <a href="https://apps.apple.com/us/app/id342792525?_branch_match_id=1147915344480287457&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXL86pTNJLLCjQy8nMy9YP9k6pDDRzNDGxBABVqlN1IAAAAA%3D%3D&utm_campaign=mdot%20sitewide%20footer%20Branch%20update&utm_medium=marketing&utm_source=IMDb%20Mdot">Downloab App</a>
               <a href="https://help.imdb.com/imdb" target="_blank">Help</a>
               <a href="https://m.imdb.com/privacy?ref_=ft_pvc" target="_blank">Privacy Policy</a>
           {/* <div className="footer_content">

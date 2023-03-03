@@ -1,7 +1,7 @@
 import React, { useState, useContext, useEffect } from "react";
 import { UserContext, UserProvider } from "./Context";
 import "./Navbar.css";
-import { Navigate, useNavigate, Link, useLocation } from "react-router-dom";
+import { Navigate, useNavigate, NavLink, useLocation } from "react-router-dom";
 import Popular from "./Popular/Popular";
 import DehazeIcon from "@mui/icons-material/Dehaze";
 import SearchIcon from "@mui/icons-material/Search";
@@ -48,7 +48,7 @@ function Navbar() {
               </p>
             </div>
           </div>
-          <Link to="/Search">
+          <NavLink to="/Search">
             <div
               className="search_container"
               onClick={() => setMovieId("Search")}
@@ -62,37 +62,37 @@ function Navbar() {
                 style={{ color: "grey", fontSize: 30, marginTop: 2 }}
               />
             </div>
-          </Link>
+          </NavLink>
         </div>
         <div className="nav_right">
           <p>IMDB Pro</p>
           <p>SignUp</p>
-          <Link activeClassName="active"
+          <NavLink
             to="/NowPlaying"
             style={{ textDecoration: "none", color: "white", marginLeft: 30 }}
           >
             <p className="nav_item" onClick={() => setMovieId("NowPlaying")}>
               Now Playing
             </p>
-          </Link>
-          <Link activeClassName="active"
+          </NavLink>
+          <NavLink
             to="/Popular"
             style={{ textDecoration: "none", color: "white", marginLeft: 30 }}
           >
             <p className="nav_item" onClick={() => setMovieId("Popular")}>Popular</p>
-            </Link>
-          <Link activeClassName="active"
+            </NavLink>
+          <NavLink
             to="/TopRated"
             style={{ textDecoration: "none", color: "white", marginLeft: 30 }}
           >
             <p className="nav_item" onClick={() => setMovieId("TopRated")}>Top Rated</p>
-          </Link>
-          <Link activeClassName="active"
+          </NavLink>
+          <NavLink
             to="/TVPage"
             style={{ textDecoration: "none", color: "white", marginLeft: 30 }}
           >
             <p className="nav_item" onClick={() => setMovieId("TvPage")}>TV</p>
-          </Link>
+          </NavLink>
         </div>
       </div>
     </div>

@@ -18,7 +18,7 @@ function Reviews(props) {
   }
   useEffect(() => {
     reviewApi();
-  }, []);
+  }, [props.id]);
   return (
     <div className="review-body">
       <h1>Reviews</h1>
@@ -38,7 +38,7 @@ function Reviews(props) {
             <p>{reviewData.content.slice(0, 500)}
             <a href={reviewData.url} target="_blank" className="read-more">Read More</a>
             </p>
-            <p>{reviewData.updated_at}</p>
+            <p>{reviewData.updated_at.slice(0,10)}</p>
           </div>
         ))}
       </div>

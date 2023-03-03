@@ -1,0 +1,29 @@
+
+.heading{
+    color: white;
+    border-style: solid;
+    border-color: #f3ce13;
+    border-width: 0px 0px 0px 5px;
+    padding-left: 10px;
+    margin-left: 160px;
+    margin-top: 40px;
+}
+.cast-container{
+    margin-left: 160px;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.cast-section{
+    margin-left: 170px;
+}
+.cast-image{
+    height: 200px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+.cast-name{
+    color: white;
+    margin-top: -1px;
+    font-weight: 600;
+}

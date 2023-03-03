@@ -13,7 +13,7 @@ function Recommendations(props) {
     }
     useEffect(()=>{
         apicall();
-    },[]);
+    },[props.id]);
 
   return (
     <div className="card_page cards_recommendations">
@@ -26,7 +26,7 @@ function Recommendations(props) {
           moviename={movie.original_title}
           moviedescription={movie.overview}
         />
-        )):""}
+        )):<p style={{color:"white"}}>No data found</p>}
       </div>
     </div>
   );

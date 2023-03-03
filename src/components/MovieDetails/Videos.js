@@ -15,7 +15,7 @@ function Videos(props) {
   }
   useEffect(() => {
     getVideo();
-  }, []);
+  }, [props.id]);
   return (
     <div className="video_main_section">
       <h1 className="video-heading">Trailer</h1>

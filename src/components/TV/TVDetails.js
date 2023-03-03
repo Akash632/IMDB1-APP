@@ -37,13 +37,6 @@ useEffect(()=>{
     vote_count
  }=tvData
 
- console.log(first_air_date);
- console.log(homepage);
- console.log(name);
- console.log(original_name);
- console.log(overview);
- console.log(backdrop_path);
-//  console.log(backdrop_path);
   return (
     <div>
         <div className="movie">
@@ -96,18 +89,20 @@ useEffect(()=>{
         </div>
       </div>
     </div>
-    <div className="card_page cards_recommendations">
-      <h1 className="page_title">Recommendations</h1>
+    <div className="seasons_container">
+    <div className="card_page tv_recommendations">
+      <h1 className="page_title">Seasons</h1>
       <div className="cards_main">
         {seasons.map((seasons) => (
           <CardClass
           id={seasons.id}
           moviepath={seasons.poster_path}
-          moviename={seasons.original_title}
+          moviename={seasons.name}
           moviedescription={seasons.overview}
         />
         ))}
       </div>
+    </div>
     </div>
     </div>
   );

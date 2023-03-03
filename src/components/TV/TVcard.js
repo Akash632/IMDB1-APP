@@ -21,7 +21,7 @@ function TVcard() {
     <h1 className="page_title_tv" onClick={()=>navigate('/TVPage')}><span>Tv </span>Shows</h1>
       <div className="card_page">
       <div className="cards_main">
-        {data.slice(0,6).map((movie) => (
+        {data.slice(0,8).map((movie) => (
           <CardClass
           id={movie.id}
           moviepath={movie.poster_path}
