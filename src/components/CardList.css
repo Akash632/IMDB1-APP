@@ -1,12 +1,18 @@
 .card_page{
     padding: 20px;
 }
-.cards_main{
+/* .cards_main{
     display: grid;
     grid-template-columns: repeat(8,1fr);
     padding: 50px;
     gap: 4px;
     margin-top: -70px;
+} */
+.cards_main{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: content-box;
+    margin-left: 50px;
 }
 .card_description{
     color: white;
@@ -14,6 +20,7 @@
 .card_image{
     position:relative;
     transition: 0.3s ease-in-out;
+    margin: 5px;
 }
 .card_image:hover{
     transform: translateY(-15px);
@@ -53,13 +60,39 @@
 }
 .page_title{
     color: white;
-    margin-left: 50px;
-    margin-bottom: 40px;
+    margin-left: 60px;
+    /* margin-bottom: 40px; */
+    margin-top: 20px;
     cursor: pointer;
     border-style: solid;
     border-color: #f3ce13;
     border-width: 0px 0px 0px 5px;
     padding-left: 10px;
+    margin-bottom: 15px;
+}
+.page_title_recommendations{
+    color: white;
+    margin-left: 60px;
+    /* margin-bottom: 40px; */
+    margin-top: 30px;
+    cursor: pointer;
+    border-style: solid;
+    border-color: #f3ce13;
+    border-width: 0px 0px 0px 5px;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+.page_title_home{
+    color: white;
+    margin-left: 60px;
+    /* margin-bottom: 40px; */
+    margin-top: 20px;
+    cursor: pointer;
+    border-style: solid;
+    border-color: #f3ce13;
+    border-width: 0px 0px 0px 5px;
+    padding-left: 10px;
+    margin-bottom: -10px;
 }
 .card_container:hover{
    box-shadow: 2px 2px 7px 7px rgb(205, 205, 205);
@@ -86,11 +119,14 @@
 .section_section>h1{
     margin-left: 75px;
 }
+.section_section{
+    margin-top: 20px;
+}
 .section_toggle{
     margin-top: 30px;
     margin-right: 75px;
 }
-.page_title>span{
+.page_title>span,.page_title_home>span,.page_title_tv>span{
     color:#f3ce13;
 }
 .section_toggle>select{
@@ -124,13 +160,15 @@
 /* .page_title>span{
     color: #f3ce13;
 } */
-.tv_section{
+/* .tv_section{
     margin-top: -60px;
-}
+} */
 .page_title_tv{
     color: white;
-    margin-left: 70px;
-    margin-bottom: 40px;
+    margin-left: 80px;
+    /* margin-bottom: 40px; */
+    margin-top: 10px;
+    margin-bottom: -5px;
     cursor: pointer;
     border-style: solid;
     border-color: #f3ce13;

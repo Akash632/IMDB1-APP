@@ -33,7 +33,7 @@ function Popular() {
     <div className="card_page">
       <h1 className="page_title"><span>Popular </span>Movies</h1>
       <div className="cards_main">
-        {value.slice(0, 18).map((movie) => (
+        {value.map((movie) => (
           <CardClass
             id={movie.id}
             moviepath={movie.poster_path}

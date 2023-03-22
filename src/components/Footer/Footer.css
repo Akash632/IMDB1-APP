@@ -7,7 +7,9 @@
     border-bottom-width: 0px;
     border-top-width: 0px;
     border-color: rgb(117, 116, 116);
-    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
 }
 .Footer_main>h1{
     color: white;
@@ -53,11 +55,10 @@
 .footer_main{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 30px;
-    /* align-items: center; */
-    margin-left: 350px;
-    width: 50%;
+    width: 60%;
     padding-bottom: 10px;
 }
 .footer_main>a{

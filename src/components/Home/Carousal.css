@@ -12,43 +12,51 @@ h3{
     height: 600px;
     border-radius: 10px;
     background-color: black;
-    opacity: 0.6;
+    opacity: 0.4;
 }
 .carousal_container{
     margin-top:20px;
     position: relative;
 }
+.heading_container{
+    width: 950px;
+}
 .carousal_text{
     font-size: 50px;
-    margin-bottom: -5px;
+    margin-bottom: 15px;
 }
 .carousal_text_section{
     position: absolute;
     left: 30px;
-    top:48vh;
+    top:50vh;
+    right: 40px;
     margin-left: 20px;
     /* background-color: black;
     opacity: 0.5; */
     cursor: pointer;
+    display: flex;
 }
 /* .slider.slick-prev{
     z-index: 10;
 } */
 .play_button_section{
     display: flex;
-    /* padding: 3px; */
-    border-radius: 60px;
-    /* margin-right: 1rem; */
-    width: 100px;
-    padding: 2px;
-
+    justify-content: center;
+    align-items: center;
+    margin-left: 250px;
+    background-color: #f3ce13;
+    border-radius: 70px;
+    width: 90px;
+    height: 90px;
+    margin-top: 25px;
 }
-.play_button_section:hover{
+/* .play_button_section:hover{
     border-color: #f3ce13;
     box-shadow: 1px 1px 7px 7px #f3ce13;
-}
+} */
 .play_button{
-    margin-top: 12px;
+    /* margin-top: 10px; */
+    margin-right: 20px;
 }
 @media screen and (max-width: 1024px){
     .carousal_Image{

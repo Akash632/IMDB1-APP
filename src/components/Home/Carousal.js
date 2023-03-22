@@ -43,6 +43,7 @@ function Carousal(props) {
           poster={carousaldata.backdrop_path}
           title={carousaldata.original_title}
           overview={carousaldata.overview}
+          date={carousaldata.release_date}
           />
         ))}
         </Slider>

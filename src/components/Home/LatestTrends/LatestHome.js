@@ -2,7 +2,6 @@ import React,{useState,useEffect} from 'react';
 import CardClass from '../../CardClass';
 import '../../CardList.css';
 import { Navigate,useNavigate } from "react-router-dom";
-import Error from '../../Error';
 import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
 
 export default function LatestHome() {
@@ -26,7 +25,7 @@ export default function LatestHome() {
   return (
     <div>
       <div className="section_section">
-      <h1 className="page_title" onClick={()=>navigate('/NowPlaying')}><span>Now </span>Playing</h1>
+      <h1 className="page_title_home" onClick={()=>navigate('/NowPlaying')}><span>Now </span>Playing</h1>
       <div className="section_toggle">
         <select className="select_bar" onChange={(e)=>setTime(e.target.value)}>
             <option>day</option>

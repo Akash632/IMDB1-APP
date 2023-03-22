@@ -10,7 +10,6 @@ import Carousal from './components/Home/Carousal';
 import Home from './components/Home/Home';
 import Footer from './components/Footer/Footer';
 import Search from './components/Search.js'
-import SearchDetails from './components/SearchDetails';
 import TVPage from './components/TVPage/TVPage';
 import TVDetails from './components/TV/TVDetails';
 

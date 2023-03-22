@@ -21,7 +21,7 @@ function Reviews(props) {
   }, [props.id]);
   return (
     <div className="review-body">
-      <h1>Reviews</h1>
+      <h1 className="page_title_review">Reviews</h1>
       <div className="review">
         {reviewData.slice(0, 2).map((reviewData) => (
           <div className="review-container">

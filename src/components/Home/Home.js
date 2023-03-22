@@ -4,6 +4,7 @@ import TVcard from '../TV/TVcard';
 import Carousal from './Carousal';
 // import Footer from './Footer';
 import LatestHome from './LatestTrends/LatestHome';
+import News from './News';
 // import TopScroll from './TopScroll';
 
 function Home() {
@@ -15,6 +16,7 @@ function Home() {
       {/* <News/> */}
       {/* <Footer/> */}
       <TVcard/>
+      <News/>
     </div>
   );
 }

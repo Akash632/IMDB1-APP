@@ -35,7 +35,7 @@ function TopRated() {
     <div className="card_page">
       <h1 className="page_title"><span>Top </span>Rated</h1>
       <div className="cards_main">
-        {value.slice(0,18).map((movie) => (
+        {value.map((movie) => (
           <CardClass
           id={movie.id}
           moviepath={movie.poster_path}
