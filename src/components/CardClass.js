@@ -4,11 +4,16 @@ import { Navigate,useNavigate } from "react-router-dom";
 
 
 export default function CardClass(props) {
-  const { movieId, setMovieId } = useContext(UserContext);
+  const { type, setType } = useContext(UserContext);
   const navigate=useNavigate();
   // console.log(movieId);
   function onClick(){
-    navigate(`/${movieId}/${props.id}`);
+    if(type === "movie"){
+      navigate(`/movie/${props.id}`);
+    }
+    else {
+      navigate(`/tv/${props.id}`);
+    }
   }
   // console.log(props.moviename);
   return (

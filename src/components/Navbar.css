@@ -54,6 +54,14 @@
 .nav_right>p:hover{
     color:#f3ce13;
 }
+.nav_links{
+     text-decoration: "none"; 
+     color: "white";
+     margin-left: 30px;
+}
+.nav_links:hover{
+    text-decoration: none;
+}
 @media screen and (max-width: 1024px) {
     .nav{
         display: block;

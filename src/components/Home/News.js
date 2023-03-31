@@ -8,9 +8,7 @@ function News() {
     async function newsData(){
         await axios.get(`https://newsdata.io/api/1/news?apikey=pub_1643021f1f98ab0d36d61d19e2e366a56ac0b&category=entertainment&language=en`)
         .then((response)=>{
-            console.log(response.data);
             setData(response.data.results);
-            console.log(data);
         })
     }
     useEffect(() => {

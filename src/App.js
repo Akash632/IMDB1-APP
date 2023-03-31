@@ -30,7 +30,7 @@ function App() {
         <Route exact path="/:type/:id" element={<MovieDetails/>}/>
         <Route exact path="/Search" element={<Search/>}/>
         <Route exact path="/TVPage" element={<TVPage/>}/>
-        <Route exact path="/TVPage/:id" element={<TVDetails/>}/>
+        <Route exact path="/tv/:id" element={<TVDetails/>}/>
         {/* <Route exact path="/Search/:id" element={<SearchDetails/>}/> */}
       </Routes>
       <Footer/>
