@@ -6,10 +6,12 @@
 }
 .video_section{
     color: white;
-    /* border-style: solid;
-    border-color: white; */
     display: flex;
     margin-left: -20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
     /* overflow-x: scroll; */
 }
 .video_card_container{
@@ -18,9 +20,9 @@
     margin-left: 20px;
     border-radius: 5px;
 }
-.video_card_container:hover{
+/* .video_card_container:hover{
     box-shadow: 2px 2px 7px 7px rgb(205, 205, 205);
-}
+} */
 .video_main_section{
     margin-top: -230px;
     margin-left: 50px;

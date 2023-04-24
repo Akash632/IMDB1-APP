@@ -1,22 +1,28 @@
-import React from 'react';
-import TVcard from '../TV/TVcard';
+import React, { useContext, useEffect } from "react";
+import { UserContext, UserProvider } from "../Context";
+import TVcard from "../TV/TVcard";
 // import News from './News';
-import Carousal from './Carousal';
+import Carousal from "./Carousal";
 // import Footer from './Footer';
-import LatestHome from './LatestTrends/LatestHome';
-import News from './News';
+import LatestHome from "./LatestTrends/LatestHome";
+import News from "./News";
+import "./Home.css";
 // import TopScroll from './TopScroll';
 
 function Home() {
+  const { type, setType } = useContext(UserContext);
+  useEffect(() => {
+    setType("movie");
+  }, []);
   return (
     <div className="slider_container">
-      <Carousal/>
+      <Carousal />
       {/* <TopScroll/> */}
-      <LatestHome/>
+      <LatestHome />
       {/* <News/> */}
       {/* <Footer/> */}
-      <TVcard/>
-      <News/>
+      <TVcard />
+      <News />
     </div>
   );
 }

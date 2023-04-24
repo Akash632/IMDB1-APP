@@ -12,12 +12,14 @@ import Footer from './components/Footer/Footer';
 import Search from './components/Search.js'
 import TVPage from './components/TVPage/TVPage';
 import TVDetails from './components/TV/TVDetails';
+import axios from 'axios';
 
 function App() {
   // const location = useLocation();
   // useEffect(()=>{
   //   console.log(location.pathname);
   // },[]);
+
   return (
     <div className="App">
       <BrowserRouter>

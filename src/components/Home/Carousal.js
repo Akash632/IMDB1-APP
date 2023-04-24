@@ -9,9 +9,9 @@ import CarousalCard from './CarousalCard';
 
 function Carousal(props) {
   const[value,setValue]=useState([]);
-  const { movieId, setMovieId } = useContext(UserContext);
+  // const { movieId, setMovieId } = useContext(UserContext);
   const navigate=useNavigate();
-  const [idmovie, setIdmovie] = useState();
+  // const [idmovie, setIdmovie] = useState();
 
 
   async function fetchApi() {

@@ -5,7 +5,8 @@ h3{
     /* border-style: solid; */
     color: white;
     margin-left: 80px;
-    margin-right: 80px;
+    /* border: solid 2px yellow; */
+    width: 90%;
 }
 .carousal_Image{
     width: 100%;

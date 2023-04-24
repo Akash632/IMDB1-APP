@@ -8,6 +8,18 @@
     gap: 4px;
     margin-top: -70px;
 } */
+/* .scroller{
+    display: flex;
+    overflow-x: hidden;
+    margin-left: 50px;
+} */
+/* .scroller::-webkit-scroller{
+    display: none;
+} */
+/* .scroller {
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+  } */
 .cards_main{
     display: flex;
     flex-wrap: wrap;
@@ -175,3 +187,12 @@
     border-width: 0px 0px 0px 5px;
     padding-left: 10px;
 }
+/* .scroll-container{
+    overflow: hidden;
+} */
+
+/* @media screen and (max-width:650px){
+    .page_title_home{
+        margin-left: 0px;
+    }
+} */

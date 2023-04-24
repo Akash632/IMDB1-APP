@@ -106,17 +106,17 @@ export default function MovieDetails() {
         <Recommendations id={params.id} />
       </div>
       <div className="production">
-        <div className="production_heading">
+        <div className="production_card_heading">
           <h1 className="page_heading">Production</h1>
         </div>
-        <div className="production_section">
+        <div className="production_card_section">
           {production.map((prodvalue) => (
             <div className="production_container">
               <div className="production_item_section">
                 <div className="prod_image_container">
                   <img
                     src={
-                      prodvalue.log_path
+                      prodvalue.logo_path
                         ? `https://www.themoviedb.org/t/p/w220_and_h330_face/${prodvalue.logo_path}`
                         : `https://www.artella.com/wp-content/uploads/2017/09/AnimationProduction-1.jpg`
                     }

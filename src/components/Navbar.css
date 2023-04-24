@@ -4,6 +4,8 @@
     padding: 7px 10%;
     /* margin-bottom: 5px; */
     background-color: #121212;
+    display: flex;
+    justify-content: space-between;
 }
 .logo_image{
     height: 34px;
@@ -40,7 +42,7 @@
     background-color: white;
     height: 31px;
     border-radius: 5px;
-    width: 450px;
+    width: 100%;
     border-style: none;
     padding-left: 10px;
 }

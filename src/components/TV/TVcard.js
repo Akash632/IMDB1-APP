@@ -1,6 +1,7 @@
 import React,{useState,useEffect} from 'react';
 import CardClass from '../CardClass';
 import '../CardList.css';
+import Homecard from '../Home/Homecard'
 import { Navigate,useNavigate } from 'react-router-dom';
 function TVcard() {
     const navigate = useNavigate();
@@ -17,19 +18,27 @@ function TVcard() {
         tvApi();
     },[]);
   return (
-    <div className="tv_section">
+    <div className="tv_section" >
     <h1 className="page_title_tv" onClick={()=>navigate('/TVPage')}><span>Tv </span>Shows</h1>
-      <div className="card_page">
-      <div className="cards_main">
+    <div className='scroll-container'>
+    <div className="card_page">
+      <div className="scroller cards_main">
         {data.slice(0,8).map((movie) => (
-          <CardClass
-          id={movie.id}
+        //   <CardClass
+        //   id={movie.id}
+        //   moviepath={movie.poster_path}
+        //   moviename={movie.original_title}
+        //   moviedescription={movie.overview}
+        // />
+        <Homecard
+        id={movie.id}
           moviepath={movie.poster_path}
           moviename={movie.original_title}
           moviedescription={movie.overview}
         />
         ))}
       </div>
+    </div>
     </div>
     </div>
     // <h1>Hello</h1>

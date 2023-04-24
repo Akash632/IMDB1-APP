@@ -1,3 +1,6 @@
 .movie_details_poster{
     width: 100px;
 }
+.scroll-container{
+    border: solid 1px white;
+}

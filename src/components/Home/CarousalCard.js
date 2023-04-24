@@ -3,11 +3,13 @@ import { UserContext, UserProvider } from "../Context";
 import { Navigate, useNavigate } from "react-router-dom";
 import SlowMotionVideoIcon from "@mui/icons-material/SlowMotionVideo";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
+
 function CarousalCard(props) {
   const { type, setType } = useContext(UserContext);
   const navigate = useNavigate();
   function onClick() {
     navigate(`/movie/${props.movieid}`);
+    console.log(type);
   }
   return (
     <div>
