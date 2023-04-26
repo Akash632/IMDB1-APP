@@ -38,12 +38,17 @@
 }
 .user-section{
     display: flex;
+    border: solid 1px yellow;
+    justify-content: start;
+    min-width: 100%;
+    align-items: center;
 }
 .user-section>p{
     margin-right: 15px;
 }
 .rating-section{
     display: flex;
+    border: solid 1px yellow;
 }
 .read-more{
     color: #f3ce13;
